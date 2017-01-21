@@ -1,0 +1,39 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* body's height will take up at least entire height of viewport */
+}
+
+.row {
+  flex: 1; /* row stretches to fill all the available space and pushes footer down */
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
